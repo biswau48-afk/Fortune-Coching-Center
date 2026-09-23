@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fortune Coaching Center | ফরচুন কোচিং সেন্টার</title>
+  <meta name="description" content="Fortune Coaching Center, কলকলিয়া, ফকিরহাট, বাগেরহাট — ৩য় শ্রেণি থেকে SSC পর্যন্ত সকল বিষয়ে শিক্ষা সহায়তা।">
+  <style>
+    :root{
+      --navy:#071b49;
+      --blue:#0d2b66;
+      --gold:#e8b52d;
+      --cream:#fffaf0;
+      --text:#172033;
+      --muted:#667085;
+      --white:#fff;
+    }
+    *{box-sizing:border-box; margin:0; padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:"Noto Sans Bengali","SolaimanLipi","Segoe UI",Arial,sans-serif; color:var(--text); background:#f7f9fc; line-height:1.7}
+    a{text-decoration:none;color:inherit}
+    .topbar{background:var(--navy);color:#fff;text-align:center;padding:7px 15px;font-size:14px}
+    header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e7eaf0;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+    .nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy)}
+    .brand img{width:58px;height:58px;object-fit:contain}
+    .brand small{display:block;color:var(--gold);font-size:12px}
+    nav{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end;font-size:14px;font-weight:700}
+    nav a:hover{color:var(--gold)}
+    .hero{background:linear-gradient(135deg,var(--navy),#102e69);color:#fff}
+    .hero-inner{max-width:1150px;margin:auto;min-height:530px;padding:70px 18px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:40px}
+    .badge{display:inline-block;border:1px solid rgba(255,255,255,.3);padding:6px 14px;border-radius:30px;font-size:13px;margin-bottom:15px}
+    h1{font-size:clamp(34px,6vw,62px);line-height:1.12;margin-bottom:12px}
+    .hero h1 span{color:var(--gold)}
+    .hero p{font-size:18px;color:#e6ebf5;max-width:700px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+    .btn{padding:11px 20px;border-radius:8px;font-weight:800;display:inline-block}
+    .btn.gold{background:var(--gold);color:var(--navy)}
+    .btn.light{border:1px solid rgba(255,255,255,.45);color:#fff}
+    .hero-logo{display:flex;justify-content:center}
+    .hero-logo img{width:min(360px,80vw);filter:drop-shadow(0 15px 25px rgba(0,0,0,.3))}
+    section{max-width:1150px;margin:auto;padding:65px 18px}
+    .section-title{text-align:center;margin-bottom:35px}
+    .section-title h2{color:var(--navy);font-size:30px}
+    .section-title p{color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid #e7eaf0;border-radius:14px;padding:24px;box-shadow:0 5px 18px rgba(15,23,42,.05)}
+    .card h3{color:var(--navy);margin-bottom:8px}
+    .icon{font-size:30px;margin-bottom:10px}
+    .about{background:var(--cream);max-width:none}
+    .about-inner{max-width:1150px;margin:auto;padding:65px 18px;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .about-box{background:#fff;padding:28px;border-radius:15px;border-left:5px solid var(--gold)}
+    ul{padding-left:22px}
+    .subjects{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+    .pill{background:#fff;border:1px solid #dfe4ed;padding:8px 14px;border-radius:999px}
+    .contact{background:var(--navy);color:#fff;max-width:none}
+    .contact-inner{max-width:1150px;margin:auto;padding:65px 18px}
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .contact-card{border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:22px;background:rgba(255,255,255,.05)}
+    .contact-card h3{color:var(--gold);margin-bottom:6px}
+    footer{background:#041332;color:#cbd5e1;text-align:center;padding:22px 15px;font-size:14px}
+    @media(max-width:800px){
+      .nav{align-items:flex-start}.brand img{width:48px;height:48px}
+      nav{gap:10px;font-size:12px}
+      .hero-inner,.about-inner{grid-template-columns:1fr;text-align:center}
+      .hero p{margin:auto}
+      .buttons{justify-content:center}
+      .cards,.contact-grid{grid-template-columns:1fr}
+      .hero-logo{order:-1}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">কলকলিয়া, ফকিরহাট, বাগেরহাট • ৩য় শ্রেণি থেকে SSC পর্যন্ত</div>
+
+  <header>
+    <div class="nav">
+      <a class="brand" href="#home">
+        <img src="logo.png" alt="Fortune Coaching Center Logo">
+        <div>FORTUNE COACHING CENTER<small>ফরচুন কোচিং সেন্টার</small></div>
+      </a>
+      <nav>
+        <a href="#home">হোম</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#courses">বিষয়সমূহ</a>
+        <a href="#notice">নোটিশ</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <div class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="badge">Established • 10 August 2018</div>
+          <h1>শিখুন আজ,<br><span>নেতৃত্ব দিন আগামীকাল</span></h1>
+          <p>ফরচুন কোচিং সেন্টারে ৩য় শ্রেণি থেকে দশম শ্রেণি (SSC) পর্যন্ত শিক্ষার্থীদের সকল বিষয়ে নিয়মিত পাঠদান, অনুশীলন ও পরীক্ষাভিত্তিক প্রস্তুতির সুযোগ।</p>
+          <div class="buttons">
+            <a class="btn gold" href="#contact">যোগাযোগ করুন</a>
+            <a class="btn light" href="#courses">বিষয়সমূহ দেখুন</a>
+          </div>
+        </div>
+        <div class="hero-logo"><img src="logo.png" alt="Fortune Coaching Center"></div>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="section-title">
+        <h2>আমাদের সম্পর্কে</h2>
+        <p>শিক্ষা, নিয়মিত অনুশীলন ও দায়িত্বশীলতার সমন্বয়ে শিক্ষার্থীর অগ্রযাত্রা</p>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="icon">🎓</div><h3>শ্রেণি</h3><p>৩য় শ্রেণি থেকে ১০ম শ্রেণি অর্থাৎ SSC পর্যন্ত শিক্ষার্থীদের পাঠদান করা হয়।</p></div>
+        <div class="card"><div class="icon">📚</div><h3>সকল বিষয়</h3><p>বাংলা, ইংরেজি, গণিত, বিজ্ঞানসহ নির্ধারিত পাঠ্যসূচির বিভিন্ন বিষয়ে সহায়তা।</p></div>
+        <div class="card"><div class="icon">📝</div><h3>অনুশীলন ও প্রস্তুতি</h3><p>পাঠ বোঝা, লিখিত অনুশীলন, পুনরাবৃত্তি ও পরীক্ষার প্রস্তুতিতে গুরুত্ব দেওয়া হয়।</p></div>
+      </div>
+    </section>
+
+    <div class="about">
+      <div class="about-inner">
+        <div>
+          <div class="section-title" style="text-align:left;margin-bottom:18px">
+            <h2>Fortune Coaching Center</h2>
+            <p>প্রতিষ্ঠাতা ও পরিচালক: উজ্জ্বল বিশ্বাস</p>
+          </div>
+          <p>ফরচুন কোচিং সেন্টার শিক্ষার্থীদের নিয়মিত পড়াশোনা, বিষয়ভিত্তিক অনুশীলন এবং পরীক্ষামুখী প্রস্তুতির জন্য একটি শিক্ষাসহায়ক পরিবেশ তৈরির লক্ষ্য নিয়ে পরিচালিত হচ্ছে।</p>
+        </div>
+        <div class="about-box">
+          <h3>আমাদের মূল লক্ষ্য</h3>
+          <ul>
+            <li>শিক্ষার্থীর মৌলিক ধারণা পরিষ্কার করা</li>
+            <li>নিয়মিত পড়াশোনার অভ্যাস গড়ে তোলা</li>
+            <li>লিখিত ও ব্যবহারিক অনুশীলনে গুরুত্ব দেওয়া</li>
+            <li>পরীক্ষার জন্য পরিকল্পিত প্রস্তুতি নেওয়া</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section id="courses">
+      <div class="section-title">
+        <h2>পাঠদানের বিষয়সমূহ</h2>
+        <p>শ্রেণি ও পাঠ্যসূচি অনুযায়ী বিষয়ভিত্তিক সহায়তা</p>
+      </div>
+      <div class="subjects">
+        <span class="pill">বাংলা</span><span class="pill">বাংলা ২য় পত্র</span>
+        <span class="pill">ইংরেজি</span><span class="pill">ইংরেজি ২য় পত্র</span>
+        <span class="pill">গণিত</span><span class="pill">বিজ্ঞান</span>
+        <span class="pill">বাংলাদেশ ও বিশ্বপরিচয়</span><span class="pill">ধর্ম</span>
+        <span class="pill">ইতিহাস</span><span class="pill">অর্থনীতি</span><span class="pill">ভূগোল</span>
+      </div>
+    </section>
+
+    <section id="notice" style="padding-top:20px">
+      <div class="section-title">
+        <h2>নোটিশ বোর্ড</h2>
+        <p>গুরুত্বপূর্ণ বিজ্ঞপ্তি ও ক্লাস-সংক্রান্ত তথ্য এখানে প্রকাশ করা হবে।</p>
+      </div>
+      <div class="card" style="max-width:800px;margin:auto;text-align:center">
+        <h3>বর্তমানে কোনো নতুন নোটিশ নেই</h3>
+        <p>নতুন বিজ্ঞপ্তি প্রকাশিত হলে এখানে দেখা যাবে।</p>
+      </div>
+    </section>
+
+    <div class="contact" id="contact">
+      <div class="contact-inner">
+        <div class="section-title">
+          <h2 style="color:#fff">যোগাযোগ</h2>
+          <p style="color:#d7deeb">ভর্তি ও ক্লাস-সংক্রান্ত তথ্যের জন্য যোগাযোগ করুন</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card"><h3>📍 ঠিকানা</h3><p>কলকলিয়া, ফকিরহাট, বাগেরহাট</p></div>
+          <div class="contact-card"><h3>📞 মোবাইল</h3><p><a href="tel:01986359382">01986-359382</a></p></div>
+          <div class="contact-card"><h3>👤 পরিচালক</h3><p>উজ্জ্বল বিশ্বাস</p></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2018–2026 Fortune Coaching Center • কলকলিয়া, ফকিরহাট, বাগেরহাট
+  </footer>
+</body>
+</html>

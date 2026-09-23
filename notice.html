@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নোটিশ - প্রাইভেট বন্ধ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Noto Sans Bengali", "SolaimanLipi", Arial, sans-serif;
+            background: #f2f5f9;
+        }
+        .notice-box {
+            max-width: 650px;
+            margin: 80px auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+        }
+        .notice-header {
+            background: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .notice-header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+        .notice-content {
+            padding: 35px;
+            text-align: center;
+        }
+        .notice-icon {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+        .notice-content h2 {
+            color: #222;
+            margin-bottom: 20px;
+        }
+        .notice-content p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #444;
+        }
+        .date {
+            color: #d63384;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: right;
+            margin-top: 30px;
+            color: #555;
+            font-size: 17px;
+        }
+        @media (max-width: 600px) {
+            .notice-box { margin: 30px 15px; }
+            .notice-content { padding: 25px 18px; }
+            .notice-content p { font-size: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="notice-box">
+        <div class="notice-header">
+            <h1>📢 নোটিশ</h1>
+        </div>
+        <div class="notice-content">
+            <div class="notice-icon">📚</div>
+            <h2>প্রাইভেট বন্ধের নোটিশ</h2>
+            <p>
+                আগামী <span class="date">রবিবার, ২৭ সেপ্টেম্বর ২০২৬</span>
+                প্রাইভেট বন্ধ থাকবে।
+            </p>
+            <p>পরবর্তী ক্লাসের সময়সূচি যথারীতি জানানো হবে।</p>
+            <div class="footer">ধন্যবাদ।</div>
+        </div>
+    </div>
+</body>
+</html>
